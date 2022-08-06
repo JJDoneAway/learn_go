@@ -1,4 +1,4 @@
-package main
+package hello_world
 
 import (
 	"fmt"
@@ -12,10 +12,6 @@ const EN_Hello = "Hello"
 const ES_Hello = "Hola"
 const FR_Hello = "Bonjour"
 const DE_Hello = "Hallo"
-
-func main() {
-	fmt.Println(Hello("Johannes", ""))
-}
 
 func Hello(name string, language string) string {
 	name = strings.TrimSpace(name)
