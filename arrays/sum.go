@@ -16,3 +16,17 @@ func SumAll(numbers ...[]int) (result []int) {
 
 	return result
 }
+
+func SumAllTails(numbers ...[]int) (result []int) {
+	elements := len(numbers)
+
+	for i := 0; i < elements; i++ {
+		if len(numbers[i]) > 1 {
+			result = append(result, Sum(numbers[i][1:]))
+		} else {
+			result = append(result, 0)
+		}
+	}
+
+	return result
+}

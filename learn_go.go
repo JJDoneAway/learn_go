@@ -8,5 +8,5 @@ import (
 
 func main() {
 	fmt.Println(hello_world.Hello("Johannes", ""))
-	fmt.Println(arrays.Sum([5]int{1, 2, 3, 4, 5}))
+	fmt.Println(arrays.Sum([]int{1, 2, 3, 4, 5}))
 }
