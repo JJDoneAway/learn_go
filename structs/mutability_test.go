@@ -5,7 +5,7 @@ import "testing"
 func TestMethod(t *testing.T) {
 
 	t.Run("Immutable", func(t *testing.T) {
-		r := Triangle{4, 2, 0}
+		r := AnyTriangle{4, 2, 0}
 		r.Calc()
 
 		if r.Area != 0 {
@@ -14,7 +14,7 @@ func TestMethod(t *testing.T) {
 	})
 
 	t.Run("Mutable", func(t *testing.T) {
-		r := Triangle{4, 2, 0}
+		r := AnyTriangle{4, 2, 0}
 		r.Calc2()
 
 		if r.Area != 4.0 {
@@ -27,7 +27,7 @@ func TestMethod(t *testing.T) {
 func TestFunction(t *testing.T) {
 
 	t.Run("Immutable", func(t *testing.T) {
-		r := Triangle{4, 2, 0}
+		r := AnyTriangle{4, 2, 0}
 		Calc3(r)
 
 		if r.Area != 0 {

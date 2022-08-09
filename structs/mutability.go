@@ -1,20 +1,20 @@
 package structs
 
-type Triangle struct {
+type AnyTriangle struct {
 	BaseLine float64
 	Height   float64
 	Area     float64
 }
 
-func (t Triangle) Calc() {
+func (t AnyTriangle) Calc() {
 	t.Area = .5 * t.BaseLine * t.Height
 }
 
-func (t *Triangle) Calc2() {
+func (t *AnyTriangle) Calc2() {
 	t.Area = .5 * t.BaseLine * t.Height
 }
 
-func Calc3(t Triangle) {
+func Calc3(t AnyTriangle) {
 	t.Area = .5 * t.BaseLine * t.Height
 }
 
