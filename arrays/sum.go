@@ -30,3 +30,7 @@ func SumAllTails(numbers ...[]int) (result []int) {
 
 	return result
 }
+
+func RemoveElement(i int, slc []string) []string {
+	return append(slc[:i], slc[i+1:]...)
+}

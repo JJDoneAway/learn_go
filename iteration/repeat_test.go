@@ -37,3 +37,34 @@ func ExampleRepeat2() {
 	fmt.Println(result)
 	//Output: bbb
 }
+
+func ExampleSimpleLoop() {
+	i := SimpleLoop()
+	fmt.Println(i)
+	// Output: 10
+}
+
+func ExampleNormalLoop() {
+	i := NormalLoop()
+	fmt.Println(i)
+	// Output: 9
+
+}
+
+func ExampleCollectionLoop() {
+	i := CollectionLoop([]int{4, 5, 6, 7})
+	fmt.Println(i)
+	//Output: 7
+}
+
+func ExampleMapLoop() {
+	k, v := MapLoop(map[string]int{"Hallo": 1, "Pimmel": 2})
+	fmt.Println(k, v)
+	//Output: Pimmel 2
+}
+
+func ExampleIfCondition() {
+	res := IfCondition()
+	fmt.Println(res)
+	//Output: true
+}

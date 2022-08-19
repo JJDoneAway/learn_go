@@ -1,6 +1,7 @@
 package arrays
 
 import (
+	"fmt"
 	"reflect"
 	"testing"
 )
@@ -56,5 +57,16 @@ func TestSumAllTails(t *testing.T) {
 func checkResult(got []int, want []int, t *testing.T) {
 	if !reflect.DeepEqual(got, want) {
 		t.Errorf("Want %v, but got %v", want, got)
+	}
+}
+
+func TestRemoveElement(t *testing.T) {
+	slc := []string{"1", "2", "3", "4", "5", "6", "7", "8", "9"}
+	fmt.Print(slc)
+
+	mySlc := RemoveElement(2, slc)
+
+	if mySlc[2] != "4" {
+		t.Errorf("Expect 4 but got %v in %v", mySlc[2], mySlc)
 	}
 }
